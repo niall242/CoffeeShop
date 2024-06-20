@@ -1,7 +1,7 @@
 header{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 380px 220px;
+    grid-template-rows: 380px 220px 60px;
 }
 
 header img{
@@ -57,5 +57,51 @@ h2{
     font-size: 16px;
     margin-bottom: 5px;
     color:azure;
+}
+
+nav{
+    grid-area: 3 / 1 / 4 /2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: gray;
+}
+
+nav a{
+    text-decoration: none; /* removes the underline from hyperlink */
+    font-family: "Playwrite IS", "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    color: azure;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+}
+
+main>img{
+    max-width: 100%; /* Ensure the icon image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the icon image doesn't exceed the container height */
+    object-fit: contain;
+}
+
+
+
+
+div{
+    position: absolute; /* This makes the writing overlay the images instead of going after/before */
+    grid-area: 1 / 1 / 2 / 4;
+    padding-top: 50px;
+    padding-inline: 150px;
+    font-family: "Playwrite IS", "Playwrite SK", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
 }
 
