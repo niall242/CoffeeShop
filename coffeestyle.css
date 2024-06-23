@@ -242,7 +242,7 @@ main img{
     }
 }
 
-/* Tablets (max-width: 550px) */
+/* Tablets (max-width: 880px) */
 @media screen and (max-width: 880px) {
     h1 {
         font-size: 100px; 
